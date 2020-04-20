@@ -1,0 +1,406 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1006,5): warning MSB8027: Two or more files with the name of AssemblyInfo.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are AssemblyInfo.cpp, Source\AssemblyInfo.cpp.
+  pch.cpp
+  AssemblyInfo.cpp
+  Actor.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Actor.cpp(123,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ActorShape.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ActorShape.cpp(29,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Aggregate.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Aggregate.cpp(131,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Articulation.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Articulation.cpp(132,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ArticulationJoint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ArticulationJoint.cpp(202,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ArticulationLink.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ArticulationLink.cpp(58,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  AssemblyInfo.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\AssemblyInfo.cpp(42,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  BatchQuery.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\BatchQuery.cpp(87,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  BitAndData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\BitAndData.cpp(21,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Bounds3.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Bounds3.cpp(155,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  BoxController.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\BoxController.cpp(66,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  BoxControllerDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\BoxControllerDesc.cpp(64,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  BoxObstacle.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\BoxObstacle.cpp(41,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  BroadPhase.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\BroadPhase.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  BroadPhaseCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\BroadPhaseCallback.cpp(46,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  BroadPhaseExt.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\BroadPhaseExt.cpp(28,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Bvh33MidphaseDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Bvh33MidphaseDesc.cpp(33,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Bvh34MidphaseDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Bvh34MidphaseDesc.cpp(30,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  CapsuleController.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\CapsuleController.cpp(41,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
+  Compiling...
+  CapsuleControllerDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\CapsuleControllerDesc.cpp(53,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  CapsuleObstacle.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\CapsuleObstacle.cpp(49,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ConstraintShaderTable.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ConstraintShaderTable.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ContactModifyCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ContactModifyCallback.cpp(48,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ContactModifyPair.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ContactModifyPair.cpp(46,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ContactPair.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ContactPair.cpp(55,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ContactPairHeader.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ContactPairHeader.cpp(19,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ContactPairPoint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ContactPairPoint.cpp(17,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ContactPatch.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ContactPatch.cpp(4,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ContactPatchBase.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ContactPatchBase.cpp(4,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ContactSet.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ContactSet.cpp(123,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ControllerHit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllerHit.cpp(29,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Collection.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Collection.cpp(96,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Constraint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Constraint.cpp(169,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Constraint1D.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Constraint1D.cpp(24,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ConstraintConnector.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ConstraintConnector.cpp(23,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ConstraintDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ConstraintDesc.cpp(8,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ControllerStats.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllerStats.cpp(15,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  DominanceGroupPair.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\DominanceGroupPair.cpp(19,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ConstraintInfo.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ConstraintInfo.cpp(14,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
+  Compiling...
+  ControllerState.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllerState.cpp(18,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  CudaContextManager.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\CudaContextManager.cpp(170,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ExtendedContact.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ExtendedContact.cpp(30,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  GeometryHolder.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\GeometryHolder.cpp(44,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  GeometryQuery.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\GeometryQuery.cpp(58,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  GpuLoadHookManager.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\GpuLoadHookManager.cpp(68,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  IGpuLoadHook.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\IGpuLoadHook.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  InternalOverlapCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\InternalOverlapCallback.cpp(31,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  InternalRaycastCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\InternalRaycastCallback.cpp(31,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  InternalSweepCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\InternalSweepCallback.cpp(31,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  IVehicleComputeTireForceInput.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\IVehicleComputeTireForceInput.cpp(4,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  IVehicleComputeTireForceOutput.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\IVehicleComputeTireForceOutput.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  JointAngularLimitPair.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\JointAngularLimitPair.cpp(64,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  JointLinearLimit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\JointLinearLimit.cpp(56,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  MassProperties.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\MassProperties.cpp(90,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  MidphaseDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\MidphaseDesc.cpp(48,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ModifiableContact.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ModifiableContact.cpp(39,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Controller.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Controller.cpp(190,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ControllerBehaviorCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllerBehaviorCallback.cpp(63,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ControllerDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllerDesc.cpp(58,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
+  Compiling...
+  ControllerFilters.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllerFilters.cpp(23,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ControllerManager.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllerManager.cpp(153,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ControllerObstacleHit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllerObstacleHit.cpp(12,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ControllerShapeHit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllerShapeHit.cpp(14,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ControllersHit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ControllersHit.cpp(23,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ConvexMesh.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ConvexMesh.cpp(108,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ConvexMeshDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ConvexMeshDesc.cpp(99,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ConvexMeshGeometry.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ConvexMeshGeometry.cpp(52,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Cooking.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Cooking.cpp(132,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  CookingParams.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\CookingParams.cpp(42,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  D6Joint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\D6Joint.cpp(128,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  D6JointDrive.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\D6JointDrive.cpp(38,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  DebugLine.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\DebugLine.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  DebugPoint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\DebugPoint.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  DebugText.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\DebugText.cpp(11,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  DebugTriangle.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\DebugTriangle.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  DefaultMemoryInputData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\DefaultMemoryInputData.cpp(37,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  DistanceJoint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\DistanceJoint.cpp(68,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ErrorCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ErrorCallback.cpp(59,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  FixedJoint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\FixedJoint.cpp(32,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
+  Compiling...
+  FixedSizeLookupTable.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\FixedSizeLookupTable.cpp(18,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Foundation.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Foundation.cpp(86,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  HeightField.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\HeightField.cpp(113,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  HeightFieldDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\HeightFieldDesc.cpp(54,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  HeightFieldGeometry.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\HeightFieldGeometry.cpp(71,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  HeightFieldSample.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\HeightFieldSample.cpp(27,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  HullPolygon.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\HullPolygon.cpp(25,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  InputData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\InputData.cpp(8,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  InputStream.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\InputStream.cpp(8,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Joint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Joint.cpp(233,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  JointLimitCone.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\JointLimitCone.cpp(68,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  JointLinearLimitPair.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\JointLinearLimitPair.cpp(64,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  JointLimitParameters.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\JointLimitParameters.cpp(86,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  LockedData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\LockedData.cpp(39,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  MeshScale.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\MeshScale.cpp(57,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ObjectTable.Disposal.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ObjectTable.Disposal.cpp(83,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ObjectTable.Get.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ObjectTable.Get.cpp(101,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  DefaultMemoryOutputStream.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\DefaultMemoryOutputStream.cpp(67,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Obstacle.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Obstacle.cpp(47,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ObstacleContext.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ObstacleContext.cpp(86,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
+  Compiling...
+  OperationFailedException.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\OperationFailedException.cpp(13,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  OutputStream.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\OutputStream.cpp(8,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  OverlapHit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\OverlapHit.cpp(20,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  PhysXEntity.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\PhysXEntity.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  PrismaticJoint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\PrismaticJoint.cpp(51,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  QueryCache.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\QueryCache.cpp(26,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  QueryFilterCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\QueryFilterCallback.cpp(49,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RaycastCCDManager.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RaycastCCDManager.cpp(37,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RaycastHit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RaycastHit.cpp(24,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RaycastQueryResult.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RaycastQueryResult.cpp(44,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RenderBuffer.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RenderBuffer.cpp(77,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RevoluteJoint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RevoluteJoint.cpp(83,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RigidActorExt.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RigidActorExt.cpp(86,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RigidBody.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RigidBody.cpp(426,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RigidDynamic.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RigidDynamic.cpp(156,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RigidStatic.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RigidStatic.cpp(14,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RuntimeFileChecks.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RuntimeFileChecks.cpp(118,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  LocationHit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\LocationHit.cpp(20,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SceneLimits.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SceneLimits.cpp(48,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SceneSweepOperationObject.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SceneSweepOperationObject.cpp(10,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
+  Compiling...
+  Serializable.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Serializable.cpp(26,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Serialization.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Serialization.cpp(90,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SerializationRegistry.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SerializationRegistry.cpp(16,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ShapeUtil.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ShapeUtil.cpp(22,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SimpleContact.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SimpleContact.cpp(14,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SimpleTriangleMesh.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SimpleTriangleMesh.cpp(122,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SimulationEventCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SimulationEventCallback.cpp(142,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  DefaultSimulationFilterShader.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\DefaultSimulationFilterShader.cpp(50,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SimulationFilterCallback.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SimulationFilterCallback.cpp(83,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SimulationFilterShader.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SimulationFilterShader.cpp(15,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SimulationStatistics.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SimulationStatistics.cpp(64,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SphericalJoint.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SphericalJoint.cpp(60,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Spring.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Spring.cpp(18,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  StdAfx.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\StdAfx.cpp(2,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  StreamExtensions.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\StreamExtensions.cpp(139,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Transform.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Transform.cpp(79,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  TriangleMeshEnum.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\TriangleMeshEnum.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VectorAndMatrixExtensions.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VectorAndMatrixExtensions.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleAntiRollBarData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleAntiRollBarData.cpp(23,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleConcurrentUpdateData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleConcurrentUpdateData.cpp(3,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
+  Compiling...
+  VehicleWheelConcurrentUpdateData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleWheelConcurrentUpdateData.cpp(16,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleWheelsDynData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleWheelsDynData.cpp(13,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SweepHit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SweepHit.cpp(22,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  TriangleMesh.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\TriangleMesh.cpp(92,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  TriangleMeshDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\TriangleMeshDesc.cpp(51,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  TriangleMeshGeometry.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\TriangleMeshGeometry.cpp(44,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  TriggerPair.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\TriggerPair.cpp(27,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  UserControllerHitReport.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\UserControllerHitReport.cpp(52,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleAckermannGeometryData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleAckermannGeometryData.cpp(26,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleAutoBoxData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleAutoBoxData.cpp(22,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleChassisData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleChassisData.cpp(24,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleClutchData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleClutchData.cpp(20,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleDifferential4WData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleDifferential4WData.cpp(26,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleDrive.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleDrive.cpp(15,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleDrive4W.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleDrive4W.cpp(33,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleDriveDynData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleDriveDynData.cpp(92,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleDriveSimData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleDriveSimData.cpp(60,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleDriveSimData4W.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleDriveSimData4W.cpp(43,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleEngineData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleEngineData.cpp(28,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleGearsData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleGearsData.cpp(34,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
+  Compiling...
+  VehicleGraph.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleGraph.cpp(4,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleGraphChannelDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleGraphChannelDesc.cpp(28,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleKeySmoothingData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleKeySmoothingData.cpp(22,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehiclePadSmoothingData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehiclePadSmoothingData.cpp(20,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleSDK.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleSDK.cpp(151,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleSuspensionData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleSuspensionData.cpp(28,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleTyreData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleTyreData.cpp(32,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleTireLoadFilterData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleTireLoadFilterData.cpp(30,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleWheelData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleWheelData.cpp(48,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleWheelQueryResult.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleWheelQueryResult.cpp(30,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleWheels.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleWheels.cpp(70,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleWheelsSimData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleWheelsSimData.cpp(141,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  VehicleWheelValues.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\VehicleWheelValues.cpp(4,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Pvd.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Pvd.cpp(72,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  XmlParserOptions.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\XmlParserOptions.cpp(12,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  BoxGeometry.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\BoxGeometry.cpp(42,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  CapsuleGeometry.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\CapsuleGeometry.cpp(27,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  FilterData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\FilterData.cpp(40,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Geometry.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Geometry.cpp(19,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Material.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Material.cpp(119,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
+  Compiling...
+  MathUtil.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\MathUtil.cpp(127,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ObjectTable.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\ObjectTable.cpp(173,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Physics.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Physics.cpp(485,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  PlaneGeometry.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\PlaneGeometry.cpp(20,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  RigidActor.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\RigidActor.cpp(124,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Scene.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Scene.cpp(519,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SceneDesc.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SceneDesc.cpp(286,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  QueryFilterData.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\QueryFilterData.cpp(22,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  QueryHit.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\QueryHit.cpp(29,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Shape.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Shape.cpp(367,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  SphereGeometry.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\SphereGeometry.cpp(30,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  TolerancesScale.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\TolerancesScale.cpp(27,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Util.cpp
+C:\Users\ronal\source\repos\Physx.NetCore\Physx.NetCore\Source\Util.cpp(198,1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  Generating Code...
