@@ -31,30 +31,26 @@ PxConvexMeshDesc ConvexMeshDesc::ToUnmanaged(ConvexMeshDesc^ desc)
 
 	PxConvexMeshDesc d;
 	
-	PxBoundedData p;
-	{
-		p.data = new PxVec3[desc->_positions->Length];
-		Util::AsUnmanagedArray(desc->_positions, (void*)p.data, desc->_positions->Length);
-		p.count = desc->_positions->Length;
-		p.stride = sizeof(Vector3);
-	}
+	d.points.data = new PxVec3[desc->_positions->Length];
+	Util::AsUnmanagedArray(desc->_positions, (void*)d.points.data, desc->_positions->Length);
+	d.points.count = desc->_positions->Length;
+	d.points.stride = sizeof(Vector3);
+	
 
-	PxBoundedData t;
+	if (desc->_triangles != nullptr)
 	{
 		int indexSize = desc->Is16BitTriangles ? sizeof(short) : sizeof(int);
 		int indexCount = desc->_triangles->Length;
 
-		t.data = malloc(indexCount * indexSize);
+		d.indices.data = malloc(indexCount * indexSize);
 		if (desc->Is16BitTriangles)
-			Util::AsUnmanagedArray((array<short>^)desc->_triangles, (void*)t.data, indexCount);
+			Util::AsUnmanagedArray((array<short>^)desc->_triangles, (void*)d.indices.data, indexCount);
 		else
-			Util::AsUnmanagedArray((array<int>^)desc->_triangles, (void*)t.data, indexCount);
-		t.count = desc->_triangles->Length / 3;
-		t.stride = (indexSize * 3);
+			Util::AsUnmanagedArray((array<int>^)desc->_triangles, (void*)d.indices.data, indexCount);
+		d.indices.count = desc->_triangles->Length / 3;
+		d.indices.stride = (indexSize * 3);
 	}
-
-	d.points = p;
-	d.indices = t;
+	
 	d.flags = ToUnmanagedEnum(PxConvexFlag, desc->Flags);
 
 	return d;

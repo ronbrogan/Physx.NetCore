@@ -124,3 +124,18 @@ bool MathUtil::IsMultipleOf(int num, int divisor)
 {
 	return (num % divisor) == 0;
 }
+
+Vector3 MathUtil::Diagonalize(Matrix4x4 mat)
+{
+	auto q = PxQuat(PxIDENTITY::PxIdentity);
+
+	PxVec3 col1(mat.M11, mat.M12, mat.M13);
+	PxVec3 col2(mat.M21, mat.M22, mat.M23);
+	PxVec3 col3(mat.M31, mat.M32, mat.M33);
+
+	auto m = PxMat33(col1, col2, col3);
+
+	auto v = PxDiagonalize(m, q);
+
+	return MathUtil::PxVec3ToVector3(v);
+}

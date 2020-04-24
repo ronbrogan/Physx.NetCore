@@ -40,6 +40,7 @@ namespace PhysX
 
 	internal:
 		Shape(PxShape* shape, PhysX::RigidActor^ parentActor);
+		Shape(PxShape* shape);
 	public:
 		~Shape();
 	protected:

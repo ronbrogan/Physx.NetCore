@@ -16,11 +16,14 @@
 #include "CookingParams.h"
 #include "Cooking.h"
 #include "TriangleMesh.h"
+#include "TriangleMeshDesc.h"
 #include "Shape.h"
+#include "ShapeFlag.h"
 #include "RuntimeFileChecks.h"
 #include "Collection.h"
 #include "Pvd.h"
 #include "ConvexMesh.h"
+#include "ConvexMeshDesc.h"
 #include "VehicleSDK.h"
 #include "ConstraintShaderTable.h"
 #include "Articulation.h"
@@ -32,6 +35,7 @@
 #include "PrismaticJoint.h"
 #include "RevoluteJoint.h"
 #include "SphericalJoint.h"
+#include "Geometry.h"
 
 using namespace PhysX;
 
@@ -241,6 +245,33 @@ TriangleMesh^ Physics::CreateTriangleMesh(System::IO::Stream^ stream)
 	}
 }
 
+TriangleMesh^ Physics::CreateTriangleMesh(Cooking^ cooking, TriangleMeshDesc^ desc)
+{
+	ThrowIfDescriptionIsNullOrInvalid(desc, "desc");
+
+	PxTriangleMeshDesc d = TriangleMeshDesc::ToUnmanaged(desc);
+
+	if (!d.isValid())
+		throw gcnew ArgumentException("The triangle mesh description is invalid");
+
+	PxTriangleMeshCookingResult::Enum result;
+
+	auto mesh = cooking->UnmanagedPointer->createTriangleMesh(d, _physics->getPhysicsInsertionCallback(), &result);
+
+	delete[] d.points.data;
+	delete[] d.triangles.data;
+	delete[] d.materialIndices.data;
+
+	if (result == PxTriangleMeshCookingResult::eFAILURE)
+		throw gcnew Exception("Cooking Triangle Mesh failed, unspecified");
+	/*else if (result == PxTriangleMeshCookingResult::eLARGE_TRIANGLE)
+		throw gcnew Exception("Cooking Triangle Mesh failed, LargeTriangle");*/
+
+	auto t = gcnew PhysX::TriangleMesh(mesh, this);
+
+	return t;
+}
+
 array<PhysX::TriangleMesh^>^ Physics::TriangleMesh::get()
 {
 	return ObjectTable::Instance->GetObjectsOfOwnerAndType<PhysX::TriangleMesh^>(this);
@@ -270,6 +301,34 @@ ConvexMesh^ Physics::CreateConvexMesh(System::IO::Stream^ stream)
 	{
 		//delete[] ms.GetMemory();
 	}
+}
+
+ConvexMesh^ Physics::CreateConvexMesh(Cooking^ cooking, ConvexMeshDesc^ desc)
+{
+	ThrowIfDescriptionIsNullOrInvalid(desc, "desc");
+
+	PxConvexMeshDesc d = ConvexMeshDesc::ToUnmanaged(desc);
+
+	if (!d.isValid())
+		throw gcnew ArgumentException("The convex mesh description is invalid");
+
+	PxConvexMeshCookingResult::Enum result;
+
+	auto mesh = cooking->UnmanagedPointer->createConvexMesh(d, _physics->getPhysicsInsertionCallback(), &result);
+
+	delete[] d.points.data;
+	delete[] d.polygons.data;
+
+	if (result == PxConvexMeshCookingResult::eFAILURE)
+		throw gcnew Exception("Cooking Convex Mesh failed, unspecified");
+	else if (result == PxConvexMeshCookingResult::ePOLYGONS_LIMIT_REACHED)
+		throw gcnew Exception("Cooking Convex Mesh failed, PolygonsLimitReached");
+	else if (result == PxConvexMeshCookingResult::eZERO_AREA_TEST_FAILED)
+		throw gcnew Exception("Cooking Convex Mesh failed, ZeroAreaTestFailed");
+
+	auto t = gcnew PhysX::ConvexMesh(mesh, this);
+
+	return t;
 }
 
 array<PhysX::ConvexMesh^>^ Physics::ConvexMesh::get()
@@ -306,6 +365,49 @@ array<RigidActor^>^ Physics::RigidActors::get()
 	return ObjectTable::Instance->GetObjectsOfOwnerAndType<RigidActor^>(this);
 }
 #pragma endregion
+
+Shape^ Physics::CreateShape(Geometry^ geometry, Material^ material, bool isExclusive, [Optional] Nullable<ShapeFlag> shapeFlags)
+{
+	ThrowIfNull(geometry, "geometry");
+	ThrowIfNullOrDisposed(material, "material");
+	
+	PxGeometry* g = geometry->ToUnmanaged();
+	PxMaterial* m = material->UnmanagedPointer;
+	PxShapeFlags f = ToUnmanagedEnum2(PxShapeFlags, shapeFlags.GetValueOrDefault(ShapeFlag::Visualization | ShapeFlag::SceneQueryShape | ShapeFlag::SimulationShape));
+
+	auto shape = _physics->createShape(*g, *m, isExclusive, f);
+
+	delete g;
+
+	return gcnew Shape(shape);
+}
+
+Shape^ Physics::CreateShape(Geometry^ geometry, array<Material^>^ materials, bool isExclusive, [Optional] Nullable<ShapeFlag> shapeFlags)
+{
+	ThrowIfNull(geometry, "geometry");
+	ThrowIfNull(materials, "materials");
+	for (int i = 0; i < materials->Length; i++)
+	{
+		ThrowIfNullOrDisposed(materials[i], "materials");
+	}
+
+	PxGeometry* g = geometry->ToUnmanaged();
+
+	PxMaterial** m = new PxMaterial * [materials->Length];
+	for (int i = 0; i < materials->Length; i++)
+	{
+		m[i] = materials[i]->UnmanagedPointer;
+	}
+
+	auto f = ToUnmanagedEnum2(PxShapeFlags, shapeFlags.GetValueOrDefault(ShapeFlag::Visualization | ShapeFlag::SceneQueryShape | ShapeFlag::SimulationShape));
+
+	auto s = _physics->createShape(*g, m, (PxU16)materials->Length, isExclusive, f);
+
+	delete g;
+	delete[] m;
+
+	return gcnew Shape(s);
+}
 
 #pragma region Joints
 Joint^ Physics::CreateJoint(JointType type, RigidActor^ actor0, Matrix localFrame0, RigidActor^ actor1, Matrix localFrame1)

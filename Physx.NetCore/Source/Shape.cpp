@@ -29,6 +29,17 @@ Shape::Shape(PxShape* shape, PhysX::RigidActor^ parentActor)
 
 	this->UnmanagedOwner = true;
 }
+
+Shape::Shape(PxShape* shape)
+{
+	if (shape == NULL)
+		throw gcnew ArgumentException("shape");
+
+	_shape = shape;
+
+	this->UnmanagedOwner = false;
+}
+
 Shape::~Shape()
 {
 	this->!Shape();

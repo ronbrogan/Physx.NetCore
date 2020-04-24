@@ -1,6 +1,7 @@
 #pragma once
 
 #include "JointEnum.h"
+#include "ShapeFlag.h"
 
 namespace PhysX
 {
@@ -8,6 +9,7 @@ namespace PhysX
 	ref class SceneDesc;
 	ref class Material;
 	ref class TriangleMesh;
+	ref class TriangleMeshDesc;
 	ref class RigidDynamic;
 	ref class Actor;
 	ref class RigidStatic;
@@ -22,6 +24,7 @@ namespace PhysX
 	ref class Shape;
 	ref class Collection;
 	ref class ConvexMesh;
+	ref class ConvexMeshDesc;
 	ref class Constraint;
 	ref class ConstraintConnector;
 	ref class ConstraintShaderTable;
@@ -30,6 +33,7 @@ namespace PhysX
 	ref class Articulation;
 	ref class Aggregate;
 	ref class Joint;
+	ref class Geometry;
 
 
 	namespace VisualDebugger
@@ -149,6 +153,8 @@ namespace PhysX
 		/// <returns>The new triangle mesh.</returns>
 		TriangleMesh^ CreateTriangleMesh(System::IO::Stream^ stream);
 
+		TriangleMesh^ CreateTriangleMesh(Cooking^ cooking, TriangleMeshDesc^ desc);
+
 		/// <summary>
 		/// Gets the triangle mesh.
 		/// </summary>
@@ -166,6 +172,8 @@ namespace PhysX
 		/// <param name="stream">The stream to load the convex mesh from.</param>
 		/// <returns>The new convex mesh.</returns>
 		ConvexMesh^ CreateConvexMesh(System::IO::Stream^ stream);
+
+		ConvexMesh^ CreateConvexMesh(Cooking^ cooking, ConvexMeshDesc^ desc);
 
 		/// <summary>
 		/// Gets the convex mesh.
@@ -213,6 +221,14 @@ namespace PhysX
 		{
 			array<RigidActor^>^ get();
 		}
+		#pragma endregion
+
+		#pragma region Shared Shapes
+		
+		Shape^ CreateShape(Geometry^ geometry, Material^ material, bool isExclusive, [Optional] Nullable<ShapeFlag> shapeFlags);
+
+		Shape^ CreateShape(Geometry^ geometry, array<Material^>^ materials, bool isExclusive, [Optional] Nullable<ShapeFlag> shapeFlags);
+
 		#pragma endregion
 
 		#pragma region Joints

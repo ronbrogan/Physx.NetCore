@@ -33,5 +33,7 @@ namespace PhysX
 		const static float PiOver2 = Pi / 2.0f;
 
 		static int Vector3SizeInBytes = 12;
+
+		static Vector3 Diagonalize(Matrix4x4 mat);
 	};
 };
