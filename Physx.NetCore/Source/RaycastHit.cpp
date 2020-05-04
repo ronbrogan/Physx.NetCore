@@ -11,11 +11,24 @@ PxRaycastHit RaycastHit::ToUnmanaged(RaycastHit^ hit)
 
 	return h;
 }
+
 RaycastHit^ RaycastHit::ToManaged(PxRaycastHit& hit)
+{
+	RaycastHit^ h = gcnew RaycastHit();
+	h->U = hit.u;
+	h->V = hit.v;
+
+	((LocationHit^)h)->PopulateManaged(hit);
+
+	return h;
+}
+
+RaycastHit^ RaycastHit::ToManaged(PxRaycastHit& hit, bool block)
 {
 	RaycastHit^ h = gcnew RaycastHit();
 		h->U = hit.u;
 		h->V = hit.v;
+		h->Block = block;
 
 	((LocationHit^)h)->PopulateManaged(hit);
 

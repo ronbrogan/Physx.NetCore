@@ -12,6 +12,7 @@ namespace PhysX
 	internal:
 		static PxRaycastHit ToUnmanaged(RaycastHit^ hit);
 		static RaycastHit^ ToManaged(PxRaycastHit& hit);
+		static RaycastHit^ ToManaged(PxRaycastHit& hit, bool block);
 
 	public:
 		/// <summary>
@@ -23,5 +24,7 @@ namespace PhysX
 		/// Barycentric coordinates of hit point, for triangle mesh and height field (flag: SceneQueryFlag.UV).
 		/// </summary>
 		property float V;
+
+		property bool Block;
 	};
 };

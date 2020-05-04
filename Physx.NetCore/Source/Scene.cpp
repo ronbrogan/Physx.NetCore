@@ -279,6 +279,56 @@ bool Scene::Raycast(Vector3 origin, Vector3 direction, float distance, int maxim
 	}
 }
 
+array<RaycastHit^>^ Scene::Raycast(Vector3 origin, Vector3 direction, float distance, int maximumHits, [Optional] HitFlag hitFlag, [Optional] Nullable<QueryFilterData> filterData, [Optional] QueryFilterCallback^ filterCallback, [Optional] QueryCache^ cache)
+{
+	if (maximumHits < 0)
+		throw gcnew ArgumentOutOfRangeException("maximumHits");
+
+	PxVec3 o = UV(origin);
+	PxVec3 d = UV(direction);
+
+	PxRaycastHit* hitBuffer;
+
+	try
+	{
+		hitBuffer = new PxRaycastHit[maximumHits];
+		PxRaycastBuffer hits(hitBuffer, maximumHits);
+
+		PxHitFlags f = ToUnmanagedEnum(PxHitFlag, hitFlag);
+
+		PxQueryFilterData fd = (filterData.HasValue ? QueryFilterData::ToUnmanaged(filterData.Value) : PxQueryFilterData());
+
+		UserQueryFilterCallback* qfcb = (filterCallback == nullptr ? NULL : &UserQueryFilterCallback(filterCallback));
+
+		PxQueryCache* qc = (cache == nullptr ? NULL : &QueryCache::ToUnmanaged(cache));
+
+		bool result = _scene->raycast(o, d, distance, hits, f, fd, qfcb, qc);
+
+		if (result)
+		{
+			auto result = gcnew array<RaycastHit^>(hits.nbTouches);
+
+
+			for (unsigned int i = 0; i < hits.nbTouches; i++)
+			{
+				PxRaycastHit h = hits.touches[i];
+
+				result[i] = RaycastHit::ToManaged(h);
+			}
+
+			return result;
+		}
+		else
+		{
+			return gcnew array<RaycastHit^>(0);
+		}
+	}
+	finally
+	{
+		delete[] hitBuffer;
+	}
+}
+
 bool Scene::Sweep(Geometry^ geometry, Matrix pose, Vector3 direction, float distance, int maximumHits, Func<array<SweepHit^>^, bool>^ hitCall, [Optional] HitFlag hitFlag, [Optional] Nullable<QueryFilterData> filterData, [Optional] QueryFilterCallback^ filterCallback, [Optional] QueryCache^ cache)
 {
 	if (maximumHits < 0)

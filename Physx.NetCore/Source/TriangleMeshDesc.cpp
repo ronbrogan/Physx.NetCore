@@ -24,7 +24,8 @@ PxTriangleMeshDesc TriangleMeshDesc::ToUnmanaged(TriangleMeshDesc^ desc)
 	{
 		auto i = PxTypedStridedData<PxMaterialTableIndex>();
 		i.data = new PxMaterialTableIndex[desc->MaterialIndices->Length];
-		
+		i.stride = sizeof(short);
+
 		d.materialIndices = i;
 		Util::AsUnmanagedArray<short>(desc->MaterialIndices, (void*)i.data, desc->MaterialIndices->Length);
 	}
