@@ -2,6 +2,7 @@
 
 #include "JointEnum.h"
 #include "ShapeFlag.h"
+#include "TolerancesScale.h"
 
 namespace PhysX
 {
@@ -71,7 +72,7 @@ namespace PhysX
 		static Physics();
 
 		/// <summary>Creates a new instance of the Physics class.</summary>
-		Physics(PhysX::Foundation^ foundation, [Optional] bool checkRuntimeFiles, [Optional] PhysX::VisualDebugger::Pvd^ pvd);
+		Physics(PhysX::Foundation^ foundation, [Optional] Nullable<PhysX::TolerancesScale> tolerancesScale, [Optional] bool checkRuntimeFiles, [Optional] PhysX::VisualDebugger::Pvd^ pvd);
 	public:
 		~Physics();
 	protected:

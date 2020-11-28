@@ -93,6 +93,11 @@ SimulationStatistics^ Scene::GetSimulationStatistics()
 	return SimulationStatistics::ToManaged(&stats);
 }
 
+PvdSceneClient^ Scene::GetPvdSceneClient()
+{
+	return gcnew PvdSceneClient(this);
+}
+
 float Scene::WakeCounterResetValue::get()
 {
 	return _scene->getWakeCounterResetValue();
@@ -191,6 +196,14 @@ void Scene::Simulate(float elapsedTime)
 {
 	_scene->simulate(elapsedTime);
 }
+void Scene::Collide(float elapsedTime)
+{
+	_scene->collide(elapsedTime);
+}
+void Scene::Advance()
+{
+	_scene->advance();
+}
 bool Scene::CheckResults([Optional] bool block)
 {
 	return _scene->checkResults(block);
@@ -198,6 +211,10 @@ bool Scene::CheckResults([Optional] bool block)
 bool Scene::FetchResults([Optional] bool block)
 {
 	return _scene->fetchResults(block);
+}
+bool Scene::FetchCollision([Optional] bool block)
+{
+	return _scene->fetchCollision(block);
 }
 void Scene::FlushSimulation([Optional] bool sendPendingReports)
 {

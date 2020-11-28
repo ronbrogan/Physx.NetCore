@@ -138,6 +138,7 @@
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Physx.NetCore.h" />
+    <ClInclude Include="Source\PvdSceneClient.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -379,6 +380,7 @@
     <ClInclude Include="Source\XmlParserOptions.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\PvdSceneClient.cpp" />
     <ClCompile Include="Source\Actor.cpp" />
     <ClCompile Include="Source\ActorShape.cpp" />
     <ClCompile Include="Source\Aggregate.cpp" />

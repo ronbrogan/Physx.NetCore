@@ -26,6 +26,13 @@ namespace PhysX
 		float GetSeparation(int i);
 		void SetSeparation(int i, float s);
 
+		float GetDynamicFriction(int i);
+		void SetDynamicFriction(int i, float f);
+		float GetStaticFriction(int i);
+		void SetStaticFriction(int i, float f);
+		float GetRestitution(int i);
+		void SetRestitution(int i, float f);
+
 		Vector3 GetTargetVelocity(int i);
 		void SetTargetVelocity(int i, Vector3 v);
 

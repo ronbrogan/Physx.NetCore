@@ -726,6 +726,9 @@
     <ClInclude Include="Source\GeometryEnum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PvdSceneClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp">
@@ -1302,6 +1305,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PvdSceneClient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

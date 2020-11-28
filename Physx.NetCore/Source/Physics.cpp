@@ -36,6 +36,7 @@
 #include "RevoluteJoint.h"
 #include "SphericalJoint.h"
 #include "Geometry.h"
+#include "TolerancesScale.h"
 
 using namespace PhysX;
 
@@ -43,7 +44,7 @@ static Physics::Physics()
 {
 	_instantiated = false;
 }
-Physics::Physics(PhysX::Foundation^ foundation, [Optional] bool checkRuntimeFiles, [Optional] PhysX::VisualDebugger::Pvd^ pvd)
+Physics::Physics(PhysX::Foundation^ foundation, [Optional] Nullable<PhysX::TolerancesScale> tolerancesScale, [Optional] bool checkRuntimeFiles, [Optional] PhysX::VisualDebugger::Pvd^ pvd)
 {
 	ThrowIfNull(foundation, "foundation");
 	if (checkRuntimeFiles)
@@ -55,7 +56,7 @@ Physics::Physics(PhysX::Foundation^ foundation, [Optional] bool checkRuntimeFile
 	Init();
 
 	PxFoundation* f = foundation->UnmanagedPointer;
-	PxTolerancesScale s;
+	PxTolerancesScale s = tolerancesScale.HasValue ? TolerancesScale::ToUnmanaged(tolerancesScale.Value) : PxTolerancesScale();
 
 	_physics = PxCreatePhysics(
 		PX_PHYSICS_VERSION,

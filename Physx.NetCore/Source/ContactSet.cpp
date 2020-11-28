@@ -44,6 +44,33 @@ void ContactSet::SetSeparation(int i, float s)
 	_contactSet->setSeparation(i, s);
 }
 
+float ContactSet::GetDynamicFriction(int i)
+{
+	return _contactSet->getDynamicFriction(i);
+}
+void ContactSet::SetDynamicFriction(int i, float f)
+{
+	return _contactSet->setDynamicFriction(i, f);
+}
+
+float ContactSet::GetStaticFriction(int i)
+{
+	return _contactSet->getStaticFriction(i);
+}
+void ContactSet::SetStaticFriction(int i, float f)
+{
+	return _contactSet->setStaticFriction(i, f);
+}
+
+float ContactSet::GetRestitution(int i)
+{
+	return _contactSet->getRestitution(i);
+}
+void ContactSet::SetRestitution(int i, float f)
+{
+	return _contactSet->setRestitution(i, f);
+}
+
 Vector3 ContactSet::GetTargetVelocity(int i)
 {
 	return MV(_contactSet->getTargetVelocity(i));

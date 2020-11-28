@@ -6,6 +6,17 @@ namespace PhysX
 	namespace VisualDebugger
 	{
 		/// <summary>
+		/// Identifies each type of actor for retrieving actors from a scene.
+		/// </summary>
+		[Flags]
+		public enum class SceneVisualizationFlags
+		{
+			TransmitConstraints		= PxPvdSceneFlag::eTRANSMIT_CONSTRAINTS,
+			TransmitContacts		= PxPvdSceneFlag::eTRANSMIT_CONTACTS,
+			TransmitSceneQueries	= PxPvdSceneFlag::eTRANSMIT_SCENEQUERIES,
+		};
+
+		/// <summary>
 		/// This class has a direct mapping to the PVD::TConnectionType datatype.
 		/// It is redefined here because not all classes including this header have the PVDSDK in their include path. 
 		/// </summary>

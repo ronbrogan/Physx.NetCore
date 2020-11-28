@@ -7,6 +7,7 @@
 #include "JointEnum.h"
 #include "PhysicsEnum.h"
 #include "RenderBuffer.h"
+#include "PvdSceneClient.h"
 
 namespace PhysX
 {
@@ -39,6 +40,7 @@ namespace PhysX
 	ref class RigidStatic;
 	ref class BroadPhaseCallback;
 	ref class SimulationFilterCallback;
+	
 
 	/// <summary>
 	/// A scene is a collection of bodies, deformables, particle systems and constraints which can interact.
@@ -98,6 +100,8 @@ namespace PhysX
 
 			/// <summary>Call this method to retrieve statistics for the current simulation step.</summary>
 			SimulationStatistics^ GetSimulationStatistics();
+
+			PvdSceneClient^ GetPvdSceneClient();
 
 			/// <summary>
 			/// Returns the wake counter reset value.
@@ -202,14 +206,35 @@ namespace PhysX
 			/// Advances the simulation by the specified time.
 			/// </summary>
 			void Simulate(float elapsedTime);
+
+			/// <summary>
+			/// Performs collision detection for the scene over elapsedTime
+			/// </summary>
+			void Collide(float elapsedTime);
+
+			/// <summary>
+			/// Performs dynamics phase of the simulation pipeline
+			/// </summary>
+			void Advance();
+
 			/// <summary>
 			/// This checks to see if the simulation run has completed.
 			/// </summary>
 			bool CheckResults([Optional] bool block);
+
 			/// <summary>
-			/// 
+			/// Conditionally blocks until simulation is complete. 
+			/// Then it will fire appropriate callbacks and swap buffers, making results available to calling code.
 			/// </summary>
 			bool FetchResults([Optional] bool block);
+
+			/// <summary>
+			/// This method must be called after collide() and before advance(). 
+			/// It will wait for the collision phase to finish. 
+			/// If the user makes an illegal simulation call, the SDK will issue an error message.
+			/// </summary>
+			bool FetchCollision([Optional] bool block);
+
 			/// <summary>
 			/// Clear internal buffers and free memory.
 			/// This method can be used to clear buffers and free internal memory without having
